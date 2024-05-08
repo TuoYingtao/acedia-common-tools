@@ -53,7 +53,7 @@
 
 假设单位时间(固定时间窗口)是`1`秒，限流阀值为`3`。在单位时间`1`秒内，每来一个请求,计数器就加`1`，如果计数器累加的次数超过限流阀值`3`，后续的请求全部拒绝。等到`1s`结束后，计数器清`0`，重新开始计数。如下图：
 
-![fixed_window_limiter.png](./docs/pic/fixed_window_limiter.png)
+![fixed_window_limiter.png](docs/pic/fixed_window_limiter.png)
 
 #### 1.2 固定窗口限流伪代码
 
@@ -86,7 +86,7 @@ public synchronized boolean tryAcquire() {
 - **优点**：固定窗口算法非常简单，易于实现和理解。
 - **缺点**：存在**明显的临界问题**，比如: 假设限流阀值为`5`个请求，单位时间窗口是`1s`,如果我们在单位时间内的`前0.8-1s`和`1-1.2s`，分别并发5个请求。虽然都没有超过阀值，但是如果算0.8-1.2s,则并发数高达10，**已经超过单位时间1s不超过5阀值的定义**啦。
 
-![fixed_window_limiter_relative_merits](./docs/pic/fixed_window_limiter_relative_merits.png)
+![fixed_window_limiter_relative_merits](docs/pic/fixed_window_limiter_relative_merits.png)
 
 ### 2. 滑动窗口限流算法
 
@@ -94,7 +94,7 @@ public synchronized boolean tryAcquire() {
 
 > 滑动窗口限流算法是一种常用的限流算法，用于控制系统对外提供服务的速率，防止系统被过多的请求压垮。它将单位时间周期分为`n`个小周期，分别记录每个小周期内接口的访问次数，并且根据时间滑动删除过期的小周期。**它可以解决固定窗口临界值的问题**。
 
-![sliding_window_limiter](./docs/pic/sliding_window_limiter.png)
+![sliding_window_limiter](docs/pic/sliding_window_limiter.png)
 
 假设单位时间还是`1`s，滑动窗口算法把它划分为`5`个小周期，也就是滑动窗口（**单位时间**）被划分为`5`个小格子。每格表示`0.2s`。每过`0.2s`，时间窗口就会往右滑动一格。然后呢，每个小周期，都有自己独立的计数器，如果请求是`0.83s`到达的，`0.8~1.0s`对应的计数器就会加`1`。
 
@@ -177,7 +177,7 @@ private Integer countCurrentWindow(Long currentWindowTime) {
 
 > 漏桶限流算法的基本工作原理是：对于每个到来的数据包，都将其加入到漏桶中，并检查漏桶中当前的水量是否超过了漏桶的容量。如果超过了容量，就将多余的数据包丢弃。如果漏桶中还有水，就以一定的速率从桶底输出数据包，保证输出的速率不超过预设的速率，从而达到限流的目的。
 
-![leaky_bucket_limiter](./docs/pic/leaky_bucket_limiter.png)
+![leaky_bucket_limiter](docs/pic/leaky_bucket_limiter.png)
 
 - 流入的水滴，可以看作是访问系统的请求，这个流入速率是不确定的。
 - 桶的容量一般表示系统所能处理的请求数。
@@ -261,7 +261,7 @@ public class LeakyBucketSingleRateLimiter {
 
 > 令牌桶算法是**一种常用的限流算法**，可以用于限制单位时间内请求的数量。该算法维护一个固定容量的令牌桶，每秒钟会向令牌桶中放入一定数量的令牌。当有请求到来时，如果令牌桶中有足够的令牌，则请求被允许通过并从令牌桶中消耗一个令牌，否则请求被拒绝。
 
-![token_bucket_limiter](./docs/pic/token_bucket_limiter.png)
+![token_bucket_limiter](docs/pic/token_bucket_limiter.png)
 
 #### 4.2 令牌桶限流算法伪代码
 
