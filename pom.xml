@@ -3,20 +3,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.commons.tools</groupId>
-    <artifactId>commons-tools</artifactId>
-    <version>1.0.0</version>
-    <name>commons-tools</name>
+    <groupId>acedia.commons.tools</groupId>
+    <artifactId>acedia-common-tools</artifactId>
+    <version>1.0.1</version>
+    <name>acedia-common-tools</name>
     <description>通用模块</description>
     <packaging>pom</packaging>
 
     <modules>
-        <module>common-core</module>
-        <module>common-redis</module>
-        <module>common-mybatis</module>
-        <module>common-log</module>
-        <module>common-swagger</module>
-        <module>common-limiting</module>
+        <module>acedia-common-core</module>
+        <module>acedia-common-redis</module>
+        <module>acedia-common-mybatis</module>
+        <module>acedia-common-log</module>
+        <module>acedia-common-swagger</module>
+        <module>acedia-common-limiting</module>
     </modules>
 
     <properties>
@@ -186,4 +186,15 @@
 
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.16.2</version>
+                <!--  mvn versions:set -DnewVersion=1.0.0 -DgroupId=com.example.project -DartifactId=acedia-common-core  -->
+            </plugin>
+        </plugins>
+    </build>
 </project>
