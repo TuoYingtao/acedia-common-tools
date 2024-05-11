@@ -1,7 +1,7 @@
-package com.common.redis.utils;
+package com.acedia.common.redis.utils;
 
-import com.common.redis.config.JedisRedisConfig;
-import com.common.redis.config.LettuceRedisConfig;
+import com.acedia.common.redis.config.JedisRedisConfig;
+import com.acedia.common.redis.config.LettuceRedisConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

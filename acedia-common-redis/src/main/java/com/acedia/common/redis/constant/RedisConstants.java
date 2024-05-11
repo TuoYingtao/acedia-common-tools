@@ -1,4 +1,4 @@
-package com.common.redis.constant;
+package com.acedia.common.redis.constant;
 
 /**
  * Redis 常量

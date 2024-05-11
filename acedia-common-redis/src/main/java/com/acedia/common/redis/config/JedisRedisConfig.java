@@ -1,6 +1,6 @@
-package com.common.redis.config;
+package com.acedia.common.redis.config;
 
-import com.common.redis.properties.RedisClientProperties;
+import com.acedia.common.redis.properties.RedisClientProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

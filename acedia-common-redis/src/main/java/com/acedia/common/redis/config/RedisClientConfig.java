@@ -1,7 +1,7 @@
-package com.common.redis.config;
+package com.acedia.common.redis.config;
 
-import com.common.redis.properties.RedisClientProperties;
-import com.common.redis.utils.FastJson2JsonRedisSerializer;
+import com.acedia.common.redis.properties.RedisClientProperties;
+import com.acedia.common.redis.utils.FastJson2JsonRedisSerializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.connection.RedisConnectionFactory;

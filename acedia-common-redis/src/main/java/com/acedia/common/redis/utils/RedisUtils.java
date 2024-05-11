@@ -1,4 +1,4 @@
-package com.common.redis.utils;
+package com.acedia.common.redis.utils;
 
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;

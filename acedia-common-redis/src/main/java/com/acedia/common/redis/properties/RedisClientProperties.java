@@ -1,4 +1,4 @@
-package com.common.redis.properties;
+package com.acedia.common.redis.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
