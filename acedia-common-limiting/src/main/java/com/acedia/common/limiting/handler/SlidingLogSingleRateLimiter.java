@@ -1,6 +1,6 @@
-package com.common.limiting.handler;
+package com.acedia.common.limiting.handler;
 
-import com.common.limiting.abstraction.AbstractSingleRateLimiter;
+import com.acedia.common.limiting.abstraction.AbstractSingleRateLimiter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

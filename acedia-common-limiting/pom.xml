@@ -3,22 +3,22 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.commons.tools</groupId>
-        <artifactId>commons-tools</artifactId>
-        <version>1.0.0</version>
+        <groupId>acedia.commons.tools</groupId>
+        <artifactId>acedia-common-tools</artifactId>
+        <version>1.0.1</version>
     </parent>
 
-    <groupId>com.common.limiting</groupId>
-    <artifactId>common-limiting</artifactId>
-    <version>1.0.0</version>
-    <name>common-limiting</name>
+    <groupId>com.acedia.common.limiting</groupId>
+    <artifactId>acedia-common-limiting</artifactId>
+    <version>1.0.1</version>
+    <name>acedia-common-limiting</name>
     <description>限流模块</description>
 
     <dependencies>
         <dependency>
-            <groupId>com.common.core</groupId>
-            <artifactId>common-core</artifactId>
-            <version>1.0.0</version>
+            <groupId>com.acedia.common.core</groupId>
+            <artifactId>acedia-common-core</artifactId>
+            <version>1.0.1</version>
         </dependency>
 
         <dependency>

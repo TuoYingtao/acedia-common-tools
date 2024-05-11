@@ -1,7 +1,7 @@
-package com.common.limiting.annotation;
+package com.acedia.common.limiting.annotation;
 
-import com.common.limiting.enums.LimitTacticsType;
-import com.common.limiting.enums.LimitTargetType;
+import com.acedia.common.limiting.enums.LimitTacticsType;
+import com.acedia.common.limiting.enums.LimitTargetType;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

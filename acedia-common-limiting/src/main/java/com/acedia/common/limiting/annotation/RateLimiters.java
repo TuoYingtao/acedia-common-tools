@@ -1,4 +1,4 @@
-package com.common.limiting.annotation;
+package com.acedia.common.limiting.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

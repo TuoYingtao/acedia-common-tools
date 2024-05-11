@@ -1,6 +1,6 @@
-package com.common.limiting.component;
+package com.acedia.common.limiting.component;
 
-import com.common.limiting.abstraction.AbstractSingleRateLimiter;
+import com.acedia.common.limiting.abstraction.AbstractSingleRateLimiter;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package com.common.limiting.enums;
+package com.acedia.common.limiting.enums;
 
 /**
  * 限流类型

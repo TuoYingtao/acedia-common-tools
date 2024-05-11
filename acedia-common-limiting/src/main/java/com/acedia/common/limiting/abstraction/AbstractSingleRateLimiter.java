@@ -1,4 +1,4 @@
-package com.common.limiting.abstraction;
+package com.acedia.common.limiting.abstraction;
 
 /**
  * 单机应用程序限流算法抽象类

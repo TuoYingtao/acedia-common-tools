@@ -1,24 +1,24 @@
-package com.common.limiting.aspect;
+package com.acedia.common.limiting.aspect;
 
-import com.common.core.exception.BusinessException;
-import com.common.core.exception.ResponseException;
-import com.common.core.text.Convert;
-import com.common.core.text.StrFormatter;
-import com.common.core.utils.StringUtils;
-import com.common.core.utils.ip.IpUtils;
-import com.common.core.utils.uuid.IdUtils;
-import com.common.limiting.abstraction.AbstractSingleRateLimiter;
-import com.common.limiting.annotation.RateLimitRule;
-import com.common.limiting.annotation.RateLimiter;
-import com.common.limiting.annotation.RateLimiters;
-import com.common.limiting.component.GlobalMapCache;
-import com.common.limiting.enums.LimitTacticsType;
-import com.common.limiting.enums.LimitTargetType;
-import com.common.limiting.handler.FixedWindowSingleRateLimiter;
-import com.common.limiting.handler.LeakyBucketSingleRateLimiter;
-import com.common.limiting.handler.SlidingLogSingleRateLimiter;
-import com.common.limiting.handler.SlidingWindowSingleRateLimiter;
-import com.common.limiting.handler.TokenBucketSingleRateLimiter;
+import com.acedia.common.limiting.abstraction.AbstractSingleRateLimiter;
+import com.acedia.common.limiting.annotation.RateLimitRule;
+import com.acedia.common.limiting.annotation.RateLimiter;
+import com.acedia.common.limiting.annotation.RateLimiters;
+import com.acedia.common.limiting.component.GlobalMapCache;
+import com.acedia.common.core.exception.BusinessException;
+import com.acedia.common.core.exception.ResponseException;
+import com.acedia.common.core.text.Convert;
+import com.acedia.common.core.text.StrFormatter;
+import com.acedia.common.core.utils.StringUtils;
+import com.acedia.common.core.utils.ip.IpUtils;
+import com.acedia.common.core.utils.uuid.IdUtils;
+import com.acedia.common.limiting.enums.LimitTacticsType;
+import com.acedia.common.limiting.enums.LimitTargetType;
+import com.acedia.common.limiting.handler.FixedWindowSingleRateLimiter;
+import com.acedia.common.limiting.handler.LeakyBucketSingleRateLimiter;
+import com.acedia.common.limiting.handler.SlidingLogSingleRateLimiter;
+import com.acedia.common.limiting.handler.SlidingWindowSingleRateLimiter;
+import com.acedia.common.limiting.handler.TokenBucketSingleRateLimiter;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -54,14 +54,14 @@ public class RateLimiterAspect {
     /**
      * 定义切点
      */
-    @Pointcut("@annotation(com.common.limiting.annotation.RateLimiter)")
+    @Pointcut("@annotation(com.acedia.common.limiting.annotation.RateLimiter)")
     public void rateLimiter() {
     }
 
     /**
      * 定义切点
      */
-    @Pointcut("@annotation(com.common.limiting.annotation.RateLimiters)")
+    @Pointcut("@annotation(com.acedia.common.limiting.annotation.RateLimiters)")
     public void rateLimiters() {
     }
 
