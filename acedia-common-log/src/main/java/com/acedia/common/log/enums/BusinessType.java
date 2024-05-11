@@ -1,4 +1,4 @@
-package com.common.log.enums;
+package com.acedia.common.log.enums;
 
 /**
  * 业务操作类型

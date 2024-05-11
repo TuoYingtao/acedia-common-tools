@@ -1,4 +1,4 @@
-package com.common.log.filter;
+package com.acedia.common.log.filter;
 
 import com.alibaba.fastjson2.filter.SimplePropertyPreFilter;
 

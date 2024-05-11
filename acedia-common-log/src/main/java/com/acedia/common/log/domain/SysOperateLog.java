@@ -1,6 +1,6 @@
-package com.common.log.domain;
+package com.acedia.common.log.domain;
 
-import com.common.core.utils.DateUtils;
+import com.acedia.common.core.utils.DateUtils;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;

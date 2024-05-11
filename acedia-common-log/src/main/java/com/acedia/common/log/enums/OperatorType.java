@@ -1,4 +1,4 @@
-package com.common.log.enums;
+package com.acedia.common.log.enums;
 
 /**
  * 操作人类别

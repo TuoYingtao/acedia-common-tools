@@ -1,7 +1,7 @@
-package com.common.log.annotation;
+package com.acedia.common.log.annotation;
 
-import com.common.log.enums.BusinessType;
-import com.common.log.enums.OperatorType;
+import com.acedia.common.log.enums.BusinessType;
+import com.acedia.common.log.enums.OperatorType;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
