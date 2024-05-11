@@ -1,0 +1,5 @@
+com.acedia.common.core.config.validator.ValidatorConfig
+com.acedia.common.core.config.thread.CustomThreadPoolConfig
+com.acedia.common.core.config.CommonsConfig
+com.acedia.common.core.utils.SpringUtils
+com.acedia.common.core.exception.GlobalExceptionHandler
