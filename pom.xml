@@ -186,4 +186,15 @@
 
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.16.2</version>
+                <!--  mvn versions:set -DnewVersion=1.0.0 -DgroupId=com.example.project -DartifactId=acedia-common-core  -->
+            </plugin>
+        </plugins>
+    </build>
 </project>
