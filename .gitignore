@@ -48,3 +48,6 @@ logs/
 **/docker/mysql/logs
 **/docker/mysql/db/*.sql
 **/docker/**/jar/*.jar
+
+### build ###
+pom.xml.versionsBackup
