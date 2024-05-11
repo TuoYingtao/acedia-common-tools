@@ -1,4 +1,4 @@
-package com.common.swagger.config;
+package com.acedia.common.swagger.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

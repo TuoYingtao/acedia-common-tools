@@ -1,4 +1,4 @@
-package com.common.swagger.config;
+package com.acedia.common.swagger.config;
 
 import cn.hutool.core.comparator.VersionComparator;
 import org.springframework.boot.SpringBootVersion;

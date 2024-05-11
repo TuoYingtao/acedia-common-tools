@@ -1,6 +1,6 @@
-package com.common.swagger.annotation;
+package com.acedia.common.swagger.annotation;
 
-import com.common.swagger.config.SwaggerAutoConfiguration;
+import com.acedia.common.swagger.config.SwaggerAutoConfiguration;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.Documented;

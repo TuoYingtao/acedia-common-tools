@@ -1,4 +1,4 @@
-package com.common.swagger.handler;
+package com.acedia.common.swagger.handler;
 
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

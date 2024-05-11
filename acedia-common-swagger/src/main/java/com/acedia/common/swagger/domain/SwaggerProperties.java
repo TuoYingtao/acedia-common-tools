@@ -1,4 +1,4 @@
-package com.common.swagger.domain;
+package com.acedia.common.swagger.domain;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

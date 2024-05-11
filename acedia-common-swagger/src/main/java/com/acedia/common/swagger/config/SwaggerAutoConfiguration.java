@@ -1,7 +1,7 @@
-package com.common.swagger.config;
+package com.acedia.common.swagger.config;
 
 
-import com.common.swagger.domain.SwaggerProperties;
+import com.acedia.common.swagger.domain.SwaggerProperties;
 import com.github.xiaoymin.knife4j.spring.annotations.EnableKnife4j;
 import com.github.xiaoymin.knife4j.spring.extension.OpenApiExtensionResolver;
 import io.swagger.models.auth.In;
