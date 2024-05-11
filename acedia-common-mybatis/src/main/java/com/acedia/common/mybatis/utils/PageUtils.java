@@ -1,7 +1,7 @@
-package com.common.mybatis.utils;
+package com.acedia.common.mybatis.utils;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.common.core.utils.json.JacksonUtils;
+import com.acedia.common.core.utils.json.JacksonUtils;
 
 import java.io.Serializable;
 import java.util.List;

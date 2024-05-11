@@ -1,11 +1,11 @@
-package com.common.mybatis.utils;
+package com.acedia.common.mybatis.utils;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.common.core.constant.Constants;
-import com.common.core.utils.html.SQLFilter;
+import com.acedia.common.core.constant.Constants;
+import com.acedia.common.core.utils.html.SQLFilter;
 
 import java.util.Map;
 
